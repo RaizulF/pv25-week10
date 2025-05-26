@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>568</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data Buku</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>541</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="data_buku">
+     <attribute name="title">
+      <string>Data Buku</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>251</y>
+        <width>521</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Judul</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Pengarang</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tahun</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>431</width>
+        <height>99</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="verticalSpacing">
+        <number>12</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="judulLabel">
+         <property name="text">
+          <string>Judul</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="judulLineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="pengarangLabel">
+         <property name="text">
+          <string>Pengarang</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="pengarangLineEdit"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="tahunLabel">
+         <property name="text">
+          <string>Tahun</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="tahunLineEdit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>150</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>0</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Data Buku</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cariJudul">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Cari Judul...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_btn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>480</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Delete Data</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ekspor">
+     <attribute name="title">
+      <string>Ekspor</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>160</y>
+        <width>411</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Save to CSV</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>568</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSimpan"/>
+    <addaction name="actionEkspor_ke_CSV"/>
+    <addaction name="actionKeluar"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCari_Judul"/>
+    <addaction name="actionHapus_Data"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSimpan">
+   <property name="text">
+    <string>Simpan</string>
+   </property>
+  </action>
+  <action name="actionEkspor_ke_CSV">
+   <property name="text">
+    <string>Ekspor ke CSV</string>
+   </property>
+  </action>
+  <action name="actionKeluar">
+   <property name="text">
+    <string>Keluar</string>
+   </property>
+  </action>
+  <action name="actionCari_Judul">
+   <property name="text">
+    <string>Cari Judul</string>
+   </property>
+  </action>
+  <action name="actionHapus_Data">
+   <property name="text">
+    <string>Hapus Data</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
